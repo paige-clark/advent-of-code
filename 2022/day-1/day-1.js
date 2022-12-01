@@ -32,3 +32,13 @@ function getMostCalories(input) {
 }
 
 console.log(getMostCalories(input));
+
+/**
+ * THOUGHTS:
+ * Zach mentioned to look in to solving this sort of problem with
+ * a min-max heap:
+ * https://en.wikipedia.org/wiki/Min-max_heap
+ * 
+ * Generally had to look for guidance with this solution but I mainly
+ * was stuck with breaking the data down in to the shape that I wanted.
+ */
