@@ -54,10 +54,13 @@ const crateSorter = (inputData, crates) => {
     const pileToMoveTo = Number(currentCommands[5]);
 
     const currentPile = crates[pileToMoveFrom - 1];
-    const stackToMove = currentPile.splice(currentPile.length - numOfCratesToMove, numOfCratesToMove)
-    crates[pileToMoveTo - 1].push(...stackToMove)
-  
+    const stackToMove = currentPile.splice(
+      currentPile.length - numOfCratesToMove,
+      numOfCratesToMove
+    );
+    crates[pileToMoveTo - 1].push(...stackToMove);
   }
+  
   let output = [];
   for (let crate of crates) {
     output.push(crate[crate.length - 1]);
