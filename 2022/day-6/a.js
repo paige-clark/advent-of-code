@@ -8,8 +8,11 @@ zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw
 const signalTuner = (inputData) => {
   const signal = inputData.trim();
   let counter = 0;
+
   for (let i = 0; i < signal.length; i++) {
     let uniqueObj = {};
+
+    // create 4 keys in uniqueObj
     uniqueObj[signal[i]] = true;
     uniqueObj[signal[i + 1]] = true;
     uniqueObj[signal[i + 2]] = true;
