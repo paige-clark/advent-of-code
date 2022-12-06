@@ -33,7 +33,9 @@ console.log(signalTuner(input));
  *
  * + establish an empty holder array
  * + loop through each character in the signal string
- *   + as you loop through it add
+ *   + as you loop through it add a key to an object
+ *   + count the keys, if they're 4, you're good
+ *   + iterate a counter depending on success or failure
  *
  * OUTPUT: the amount of characters that need to be processed
  *         to find a set of 4 unique characters
